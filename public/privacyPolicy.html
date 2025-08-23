@@ -1,0 +1,230 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Privacy Policy - Zonic Marketers</title>
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.4.0/css/all.min.css">
+    <link rel="stylesheet" href="style.css">
+    <link rel="stylesheet" href="responsive.css">
+    <link rel="stylesheet" href="loginSignUp.css">
+    <link rel="stylesheet" href="privactPolicy.css">
+</head>
+
+<body>
+
+    <section id="header">
+         <a href="#"><img src="img/logo1.png" class="logo" alt=""></a>
+        <div>
+            <ul id="navbar">
+                <li><a href="index.html">Home</a></li>
+                <li class="dropdown">
+                    <a href="#" class="dropdown-toggle">Shop <i class="fas fa-chevron-down"></i></a>
+                    <ul class="dropdown-menu">
+                        <li><a href="eyes.html">Eyes</a></li>
+                        <li><a href="fragrance.html">Fragrance</a></li>
+                        <li><a href="face.html">Face</a></li>
+                        <li><a href="lips.html">Lips</a></li>
+                        <li><a href="deals.html">Deals</a></li>
+                    </ul>
+                </li>
+                <li><a href="blog.html">Blog</a></li>
+                <li><a href="about.html">About</a></li>
+                <li><a href="adminLogin.html">Admin LogIn</a></li>
+                <li><a href="contact.html">Contact</a></li>
+                <li><a href="#" id="accountBtn"><i class="fas fa-user"></i></a></li>
+                <!-- Cart Icon -->
+                <li id="lg-bag" style="position: relative;">
+                    <a href="cart.html">
+                        <i class="fa-solid fa-shopping-bag"></i>
+                    </a>
+                </li>
+                <a href="#" id="close"><i class="fa-solid fa-xmark"></i></a>
+            </ul>
+
+            <!-- Add this login panel HTML (same as before) -->
+            <div id="accountPanel" class="account-panel">
+                <div class="panel-content">
+                    <span class="close-panel">&times;</span>
+                    
+                    <!-- If Logged In -->
+                    <div id="accountDetails" class="form-container" style="display: none;">
+                        <h3>Your Account</h3>
+                        <p><strong>Name:</strong> <span id="userNameDisplay"></span></p>
+                        <p><strong>Email:</strong> <span id="userEmailDisplay"></span></p>
+                        <button class="btn" id="logoutBtn">Logout</button>
+                    </div>
+
+
+
+                    <!-- Login Form -->
+                    <div id="loginForm" class="form-container">
+                        <h3>Login</h3>
+                        <form id="loginFormElement">
+                            <div class="form-group">
+                                <input type="email" placeholder="Email" required id="email">
+                                <div class="error-message" id="emailError"></div>
+                            </div>
+                            <div class="form-group">
+                                <input type="password" placeholder="Password" required id="password">
+                                <div class="error-message" id="passwordError"></div>
+                            </div>
+                            <button type="submit" class="btn">Login</button>
+                            <div class="success-message" id="successMessage"></div>
+                        </form>
+                        <p class="toggle-form">Don't have an account? <a href="#" id="showSignup">Sign up</a></p>
+                    </div>
+
+                    <!-- Signup Form -->
+                    <div id="signupForm" class="form-container" style="display: none;">
+                        <h3>Sign Up</h3>
+                        <form id="signupFormElement">
+                            <div class="form-group">
+                                <input type="text" placeholder="Name" required id="signupName">
+                                <div class="error-message" id="signupNameError"></div>
+                            </div>
+                            <div class="form-group">
+                                <input type="email" placeholder="Email" required id="signupEmail">
+                                <div class="error-message" id="signupEmailError"></div>
+                            </div>
+                            <div class="form-group">
+                                <input type="password" placeholder="Password" required id="signupPassword">
+                                <div class="error-message" id="signupPasswordError"></div>
+                            </div>
+                            <div class="form-group">
+                                <input type="password" placeholder="Confirm Password" required
+                                    id="signupConfirmPassword">
+                                <div class="error-message" id="signupConfirmPasswordError"></div>
+                            </div>
+                            <button type="submit" class="btn">Sign Up</button>
+                            <div class="success-message" id="signupSuccessMessage"></div>
+                        </form>
+                        <p class="toggle-form">Already have an account? <a href="#" id="showLogin">Login</a></p>
+                    </div>
+                </div>
+            </div>
+        </div>
+            <div id="mobile">
+                <a href="cart.html" style="position: relative;">
+                    <i class="fa-solid fa-shopping-bag"></i>
+                </a>
+                <i id="bar" class="fas fa-outdent"></i>
+            </div>
+    </section>
+    <section id="page-header" class="privacyPolicy-page">
+        <h2>Privacy Policy</h2>
+        <p>At <strong>Zonic Marketers</strong>, we value your privacy and are committed to protecting your personal
+            information. This Privacy Policy outlines how we collect, use, and safeguard your data when you interact
+            with our website and services.
+        </p>
+    </section>
+
+    <section id="Privacy-details" class="section-p1 privacy-page">
+        <h3>Information We Collect</h3>
+        <p>We collect personal information from you in several ways:</p>
+        <ul>
+            <li>When you create an account or make a purchase through our online store.</li>
+            <li>When you fill out our contact or feedback forms.</li>
+            <li>When you subscribe to our newsletter or promotional emails.</li>
+            <li>When you browse or interact with our website.</li>
+        </ul>
+        <p>The information we collect may include your name, email address, shipping address, phone number, and payment
+            details.</p>
+
+        <h3>How We Use Your Information</h3>
+        <p>The information we gather is used to:</p>
+        <ul>
+            <li>Process and fulfill your orders.</li>
+            <li>Respond to your inquiries and provide customer support.</li>
+            <li>Improve your shopping experience and our website functionality.</li>
+            <li>Notify you about new products, promotions, or important updates.</li>
+            <li>Understand customer interests to enhance our product offerings and services.</li>
+        </ul>
+        <p>We may keep track of your preferences and shopping behavior to tailor content and recommend products that
+            suit your needs.</p>
+
+        <h3>Data Protection & Sharing</h3>
+        <p>We follow strict procedures to ensure your personal information is protected. Your data is stored securely
+            and is not shared with third parties, except when necessary to fulfill orders (e.g., with shipping companies
+            or payment processors).</p>
+        <p>We do not sell or rent your information to any external organizations.</p>
+
+        <h3>Postal & Email Communication</h3>
+        <p>We may use your postal address and phone number to:</p>
+        <ul>
+            <li>Deliver your orders.</li>
+            <li>Confirm transactions or address order-related issues.</li>
+            <li>Occasionally inform you about new arrivals or special offers (only if you've opted in).</li>
+        </ul>
+        <p>You may also receive periodic emails regarding updates, product launches, or exclusive discounts.</p>
+
+        <h3>Cookies</h3>
+        <p>Our website uses cookies to:</p>
+        <ul>
+            <li>Keep track of items in your shopping cart.</li>
+            <li>Enhance site performance and user experience.</li>
+            <li>Collect anonymous traffic data for analytics purposes.</li>
+        </ul>
+        <p>Cookies help us remember your preferences and improve navigation throughout the site. You can control cookie
+            settings through your browser at any time.</p>
+
+        <h3>Your Consent</h3>
+        <p>By using our website, you consent to the terms outlined in this Privacy Policy.</p>
+
+        <h3>Contact Us</h3>
+        <p>If you have any questions, concerns, or requests regarding your personal information or our privacy
+            practices, feel free to contact us.</p>
+
+    </section>
+
+  <footer class="section-p1">
+        <div class="col">
+            <h4>Contact</h4>
+            <p><strong>Address:</strong>Tranda Sawaye Khan, Rahim Yar Khan</p>
+            <p><strong>Phone:</strong> 03111111101 (92) 3033300330</p>
+            <p><strong>Hours:</strong> 10:00 - 18:00, Mon - Sat</p>
+            <div class="follow">
+                <h4>Follow us</h4>
+                <div class="icon">
+                    <a href="">
+                        <i class="fab fa-facebook-f"></i>
+                    </a>
+                    <a href="https://www.instagram.com/zonic18963?igsh=MW9hZ3czOGFuN2o4bA==" target="_blank">
+                        <i class="fab fa-instagram"></i>
+                    </a>
+                    <a href="https://pin.it/1Bftjo3op" target="_blank">
+                        <i class="fab fa-pinterest-p"></i>
+                    </a>
+                    <a href="https://www.tiktok.com/@zonic1218?_t=ZS-8yNCWQbmMTQ&_r=1" target="_blank">
+                        <i class="fab fa-tiktok"></i>
+                    </a>
+                </div>
+            </div>
+        </div>
+        <div class="col">
+            <h4>About</h4>
+            <a href="about.html">About Us</a>
+            <a href="privacyPolicy.html">Privacy Policy</a>
+            <a href="termsConditions.html">Terms & Conditions</a>
+            <a href="contact.html">Contact Us</a>
+        </div>
+        <div class="col">
+            <h4>My Account</h4>
+            <a href="cart.html">View Cart</a>
+        </div>
+        <div class="col install">
+            <h4>Secured Payment Gateways</h4>
+            <img class="row" src="img/pay.jpeg" alt="">
+        </div>
+
+        <div class="copyright">
+            <p>© ZONIC MARKETERS 2025 | All Rights Reserved</p>
+        </div>
+    </footer>
+
+    <script src="script.js"></script>
+    <script src="loginSignUp.js"></script>
+</body>
+
+</html>

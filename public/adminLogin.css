@@ -1,0 +1,58 @@
+@import url("https://fonts.googleapis.com/css2?family=Spartan:wght@300;400;600&display=swap");
+
+body {
+  font-family: "Spartan", sans-serif;
+  background-color: #f9f9f9;
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  height: 100vh;
+}
+
+form#loginForm {
+  background-color: white;
+  padding: 40px 30px;
+  border-radius: 12px;
+  box-shadow: 0 4px 12px rgba(0, 0, 0, 0.1);
+  width: 320px;
+  text-align: center;
+}
+
+form#loginForm h2 {
+  color: #a14455;
+  margin-bottom: 24px;
+  font-weight: 600;
+  font-size: 24px;
+}
+
+form#loginForm input {
+  width: 100%;
+  padding: 12px;
+  margin: 10px 0;
+  border: 1px solid #ccc;
+  border-radius: 8px;
+  font-size: 14px;
+}
+
+form#loginForm button {
+  width: 100%;
+  padding: 12px;
+  margin-top: 16px;
+  background-color: #b0757e;
+  border: none;
+  border-radius: 8px;
+  color: white;
+  font-size: 16px;
+  cursor: pointer;
+  transition: background-color 0.3s ease;
+}
+
+form#loginForm button:hover {
+  background-color: #a14455;
+}
+
+form#loginForm #errorMsg {
+  margin-top: 10px;
+  color: red;
+  font-size: 14px;
+}

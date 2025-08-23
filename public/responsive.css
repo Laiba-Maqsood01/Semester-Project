@@ -1,0 +1,388 @@
+/* Ensure dropdown is hidden initially in mobile */
+#navbar li.dropdown ul {
+  display: none;
+}
+
+/* Show dropdown on hover in desktop */
+@media (min-width: 800px) {
+  #navbar li.dropdown:hover ul {
+    display: block;
+  }
+}
+
+/* Show dropdown when class is toggled in mobile */
+#navbar li.dropdown ul.show {
+  display: block;
+}
+
+
+
+
+@media (max-width:799px) {
+  .section-p1 {
+    padding: 40px 40px;
+  }
+
+  #navbar {
+    display: flex;
+    flex-direction: column;
+    align-items: flex-start;
+    justify-content: flex-start;
+    position: fixed;
+    top: 0;
+    right: -300px;
+    height: 100vh;
+    width: 300px;
+    background-color: #f3e3e9;
+    box-shadow: 0 40px 60px rgba(0, 0, 0, 0.1);
+    padding: 80px 0 0 10px;
+    transition: 0.3s;
+  }
+
+  #navbar.active {
+    right: 0px;
+  }
+
+  #navbar li {
+    margin-bottom: 25px;
+  }
+
+  #mobile {
+    display: flex;
+    align-items: center;
+  }
+
+  #mobile i {
+    color: #b0757e;
+    font-size: 24px;
+    padding-left: 20px;
+    cursor: pointer;
+  }
+  #mobile i:hover{
+    color: #a14455;
+  }
+
+  #bar {
+    z-index: 999;
+    display: inline-block;
+  }
+
+  #close {
+    display: initial;
+    position: absolute;
+    top: 30px;
+    left: 30px;
+    color: #a14455;
+     /* color: #222;  */
+
+    font-size: 24px;
+  }
+
+  #lg-bag {
+    display: none;
+  }
+/* to hide our shopping and hamburger icon when menu is open */
+  body.nav-open #mobile {
+    display: none !important;
+  }
+
+  /* Set icon color to #b0757e */
+  #mobile i,
+  #lg-bag i {
+    color: #b0757e !important;
+  }
+
+  /* Fix dropdown toggle arrow if needed */
+  #dropdown-icon {
+    color: #b0757e !important;
+  }
+
+
+
+
+  /* for making every page banner responsive */
+ /*about, blog, cart etc */
+  .about-header, .blog-header, .cart-header{
+    flex-direction: column;
+    padding: 30px 20px;
+    text-align: center;
+  }
+/* deals */
+.deals-page, .eyes-page ,.fragrance-page, .face-page, .lipsticks-page,
+.hero-slider-wrapper .hero-slider .slide{
+    background-size: contain;
+    background-repeat: no-repeat;
+    background-position: right center;
+    height: 70vh;
+    width: 100%; 
+  }
+  #feature{
+    margin-top: -190px;
+  }
+  .hero-text h1 {
+    font-size: 20px;
+  }
+
+  .hero-text h2 {
+    font-size: 18px;
+  }
+
+  .hero-text h4 {
+    font-size: 14px;
+  }
+
+  .hero-text p {
+    font-size: 13px;
+  }
+
+  .hero-text button {
+    padding: 8px 16px;
+    font-size: 14px;
+  }
+
+  .hero-text {
+    padding: 10px;
+    text-align: center;
+  }
+
+  .slide {
+    padding: 20px 10px;
+  }
+
+  .slider-nav {
+    font-size: 20px;
+    padding: 6px 10px;
+  }
+
+   #feature {
+    display: flex;
+    flex-wrap: wrap;
+    justify-content: center;
+    gap: 15px;
+    padding: 10px;
+  }
+
+  .fe-box {
+    width: 45%;
+    margin: 5px;
+    text-align: center;
+  }
+
+  .fe-box img {
+    width: 100%;
+    height: auto;
+  }
+
+  .fe-box h6 {
+    font-size: 14px;
+    margin-top: 8px;
+  }
+  
+  /* Featured Products */
+  .page-heading {
+    font-size: 20px;
+    text-align: center;
+  }
+
+  .product-container {
+    display: flex;
+    flex-wrap: wrap;
+    justify-content: center;
+    gap: 15px;
+  }
+
+  /* Banner Section */
+  #banner h4 {
+    font-size: 14px;
+  }
+
+  #banner h2 {
+    font-size: 18px;
+    text-align: center;
+  }
+
+  #banner span {
+    font-size: 13px;
+    display: block;
+    text-align: center;
+  }
+
+  #banner button {
+    font-size: 14px;
+    padding: 8px 14px;
+    display: block;
+    margin: 10px auto;
+  }
+
+  /* Style Inspiration Section */
+  #style-inspiration {
+    padding: 10px;
+    text-align: center;
+  }
+
+  #style-inspiration h2 {
+    font-size: 18px;
+  }
+
+  #style-inspiration p {
+    font-size: 14px;
+  }
+
+  #style-inspiration img {
+    width: 100%;
+    height: auto;
+    margin: 15px 0;
+  }
+
+  .beauty-tips h3 {
+    font-size: 16px;
+  }
+
+  .beauty-tips ul li {
+    font-size: 14px;
+    text-align: left;
+    margin-bottom: 8px;
+  }
+
+  /* Small Banners Section (sm-banner) */
+  #sm-banner {
+    display: flex;
+    flex-direction: column;
+    gap: 20px;
+  }
+
+  .banner-box {
+    padding: 20px;
+    text-align: center;
+  }
+
+  .banner-box h4 {
+    font-size: 14px;
+  }
+
+  .banner-box h2 {
+    font-size: 18px;
+  }
+
+  .banner-box span {
+    font-size: 13px;
+  }
+
+  .banner-box button {
+    padding: 8px 16px;
+    font-size: 14px;
+  }
+
+  /* Banner3 section */
+  #banner3 {
+    display: flex;
+    flex-direction: column;
+    gap: 15px;
+    padding: 10px;
+  }
+
+  #banner3 .banner-box {
+    text-align: center;
+    padding: 20px;
+  }
+
+  #banner3 h2 {
+    font-size: 18px;
+  }
+
+  #banner3 h3 {
+    font-size: 15px;
+  }
+  
+    #page-header .fragrance-page,
+  #page-header .deals-page,
+  #page-header .eyes-page,
+  #page-header .face-page,
+  #page-header .lipsticks-page{
+    h2{
+      font-size: 30px;
+    }
+  }
+}
+@media (min-width: 768px) and (max-width: 1024px){
+
+    .section-p1 {
+    padding: 40px 40px;
+  }
+
+  #navbar {
+    display: flex;
+    flex-direction: column;
+    align-items: flex-start;
+    justify-content: flex-start;
+    position: fixed;
+    top: 0;
+    right: -300px;
+    height: 100vh;
+    width: 300px;
+    background-color: #f3e3e9;
+    box-shadow: 0 40px 60px rgba(0, 0, 0, 0.1);
+    padding: 80px 0 0 10px;
+    transition: 0.3s;
+  }
+
+  #navbar.active {
+    right: 0px;
+  }
+
+  #navbar li {
+    margin-bottom: 25px;
+  }
+
+  #mobile {
+    display: flex;
+    align-items: center;
+  }
+
+  #mobile i {
+    color: #b0757e;
+    font-size: 24px;
+    padding-left: 20px;
+    cursor: pointer;
+  }
+  #mobile i:hover{
+    color: #a14455;
+  }
+
+  #bar {
+    z-index: 999;
+    display: inline-block;
+  }
+
+  #close {
+    display: initial;
+    position: absolute;
+    top: 30px;
+    left: 30px;
+    color: #a14455;
+     /* color: #222;  */
+
+    font-size: 24px;
+  }
+
+  #lg-bag {
+    display: none;
+  }
+/* to hide our shopping and hamburger icon when menu is open */
+  body.nav-open #mobile {
+    display: none !important;
+  }
+
+  /* Set icon color to #b0757e */
+  #mobile i,
+  #lg-bag i {
+    color: #b0757e !important;
+  }
+
+  /* Fix dropdown toggle arrow if needed */
+  #dropdown-icon {
+    color: #b0757e !important;
+  }
+
+}
+

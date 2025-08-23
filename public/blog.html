@@ -1,0 +1,217 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Blog - Zonic Marketers</title>
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.4.0/css/all.min.css">
+    <link rel="stylesheet" href="style.css">
+    <link rel="stylesheet" href="responsive.css">
+    <link rel="stylesheet" href="loginSignUp.css">
+</head>
+<body>
+    
+     <section id="header">
+        <a href="#"><img src="img/logo1.png" class="logo" alt=""></a>
+        <div>
+            <ul id="navbar">
+                <li><a href="index.html">Home</a></li>
+                <li class="dropdown">
+                    <a href="#" class="dropdown-toggle">Shop <i class="fas fa-chevron-down"></i></a>
+                    <ul class="dropdown-menu">
+                        <li><a href="eyes.html">Eyes</a></li>
+                        <li><a href="fragrance.html">Fragrance</a></li>
+                        <li><a href="face.html">Face</a></li>
+                        <li><a href="lips.html">Lips</a></li>
+                        <li><a href="deals.html">Deals</a></li>
+                    </ul>
+                </li>
+                <li><a class="active" href="blog.html">Blog</a></li>
+                <li><a href="about.html">About</a></li>
+                <li><a href="adminLogin.html">Admin LogIn</a></li>
+                <li><a href="contact.html">Contact</a></li>
+                <li><a href="#" id="accountBtn"><i class="fas fa-user"></i></a></li>
+                <!-- Cart Icon -->
+                <li id="lg-bag" style="position: relative;">
+                    <a href="cart.html">
+                        <i class="fa-solid fa-shopping-bag"></i>
+                    </a>
+                </li>
+                <a href="#" id="close"><i class="fa-solid fa-xmark"></i></a>
+            </ul>
+
+            <!-- Add this login panel HTML (same as before) -->
+            <div id="accountPanel" class="account-panel">
+                <div class="panel-content">
+                    <span class="close-panel">&times;</span>
+                    
+                    <!-- If Logged In -->
+                    <div id="accountDetails" class="form-container" style="display: none;">
+                        <h3>Your Account</h3>
+                        <p><strong>Name:</strong> <span id="userNameDisplay"></span></p>
+                        <p><strong>Email:</strong> <span id="userEmailDisplay"></span></p>
+                        <button class="btn" id="logoutBtn">Logout</button>
+                    </div>
+
+
+
+                    <!-- Login Form -->
+                    <div id="loginForm" class="form-container">
+                        <h3>Login</h3>
+                        <form id="loginFormElement">
+                            <div class="form-group">
+                                <input type="email" placeholder="Email" required id="email">
+                                <div class="error-message" id="emailError"></div>
+                            </div>
+                            <div class="form-group">
+                                <input type="password" placeholder="Password" required id="password">
+                                <div class="error-message" id="passwordError"></div>
+                            </div>
+                            <button type="submit" class="btn">Login</button>
+                            <div class="success-message" id="successMessage"></div>
+                        </form>
+                        <p class="toggle-form">Don't have an account? <a href="#" id="showSignup">Sign up</a></p>
+                    </div>
+
+                    <!-- Signup Form -->
+                    <div id="signupForm" class="form-container" style="display: none;">
+                        <h3>Sign Up</h3>
+                        <form id="signupFormElement">
+                            <div class="form-group">
+                                <input type="text" placeholder="Name" required id="signupName">
+                                <div class="error-message" id="signupNameError"></div>
+                            </div>
+                            <div class="form-group">
+                                <input type="email" placeholder="Email" required id="signupEmail">
+                                <div class="error-message" id="signupEmailError"></div>
+                            </div>
+                            <div class="form-group">
+                                <input type="password" placeholder="Password" required id="signupPassword">
+                                <div class="error-message" id="signupPasswordError"></div>
+                            </div>
+                            <div class="form-group">
+                                <input type="password" placeholder="Confirm Password" required
+                                    id="signupConfirmPassword">
+                                <div class="error-message" id="signupConfirmPasswordError"></div>
+                            </div>
+                            <button type="submit" class="btn">Sign Up</button>
+                            <div class="success-message" id="signupSuccessMessage"></div>
+                        </form>
+                        <p class="toggle-form">Already have an account? <a href="#" id="showLogin">Login</a></p>
+                    </div>
+                </div>
+            </div>
+        </div>
+                <div id="mobile">
+                    <a href="cart.html" style="position: relative;">
+                        <i class="fa-solid fa-shopping-bag"></i>
+                    </a>
+                    <i id="bar" class="fas fa-outdent"></i>
+                </div>
+    </section>
+
+    <section class="page-header blog-header ">
+     <h2>--blog--</h2>   
+    <h2>#readmore</h2>
+    <p>Read all case studies about our products!</p>
+   </section>
+
+   <section id="blog">
+        <div class="blog-box">
+            <div class="blog-img">
+                <img src="img/blog1.jpg" alt="">
+            </div>
+            <div class="blog-details">
+                <h4>The Art of Eye Makeup: Enhancing Natural Beauty</h4>
+                <p>Makeup is more than just a cosmetic tool — it's a form of self-expression and artistry. In this moment captured, we see the delicate and skilled application of eyeshadow, a step that enhances the eyes and brings out their natural charm. Whether it's for a wedding, a photoshoot, or simply to feel confident, eye makeup can transform a look and uplift the spirit. The precise strokes of the brush reflect the professionalism and care that goes into creating a flawless look, emphasizing that beauty lies in the details.</p>
+            </div>
+        </div>
+         <div class="blog-box">
+            <div class="blog-img">
+                <img src="img/blog2.jpg" alt="">
+            </div>
+            <div class="blog-details">
+                <h4>Elegance Redefined: The Power of Perfect Glam</h4>
+                <p>In the world of fashion and beauty, confidence begins with the perfect glam. This striking image showcases the blend of soft pastels, detailed eye makeup, and a graceful pose — reflecting the essence of modern beauty. From the delicately embroidered floral sleeve to the luminous skin and captivating gaze, every detail tells a story of sophistication and self-assurance. It's not just about looking beautiful, but about embracing your uniqueness and radiating inner strength through outer elegance.</p>
+            </div>
+        </div>
+         <div class="blog-box">
+            <div class="blog-img">
+                <img src="img/blog3.jpg" alt="">
+            </div>
+            <div class="blog-details">
+                <h4>Behind the Glam: The Tools That Create Magic</h4>
+                <p>Every flawless look begins with the right tools. This elegant collection of makeup brushes is more than just an accessory — it's the foundation of every stunning transformation. From soft blending brushes to precision contour tools, each item plays a vital role in achieving a polished and professional finish. Whether you're a makeup artist or a beauty enthusiast, having clean, high-quality brushes is key to bringing your creativity to life. Because true beauty lies not just in the product, but in the hands that know how to use it.</p>
+            </div>
+        </div>
+         <div class="blog-box">
+            <div class="blog-img">
+                <img src="img/blog4.jpg" alt="">
+            </div>
+            <div class="blog-details">
+                <h4>Digital Marketing for Makeup Pros.Showcasing Excellence in the Industry</h4>
+                <p>This image highlights the importance of digital marketing strategies in the makeup industry, emphasizing how these techniques can effectively showcase the best professionals and brands. By leveraging online platforms and creative campaigns, makeup artists can demonstrate their expertise, reach a wider audience, and stay ahead in a competitive market. The visual serves as a reminder of the transformative power of digital marketing in elevating the makeup business.</p>
+            </div>
+        </div>
+         <div class="blog-box">
+            <div class="blog-img">
+                <img src="img/blog-3.jpg" alt="">
+            </div>
+            <div class="blog-details">
+                <h4>Digital Marketing Strategies for Makeup: Showcasing Excellence</h4>
+                <p>This image emphasizes the role of digital marketing in the makeup industry, focusing on strategies that highlight the best professionals and brands. By utilizing effective online techniques, makeup artists can showcase their skills, reach a broader audience, and establish themselves as leaders in the field. The image serves as a visual representation of how digital marketing can elevate the makeup business to new heights.</p>
+            </div>
+        </div>
+    </section>
+
+     <footer class="section-p1">
+        <div class="col">
+            <h4>Contact</h4>
+            <p><strong>Address:</strong>Tranda Sawaye Khan, Rahim Yar Khan</p>
+            <p><strong>Phone:</strong> 03111111101 (92) 3033300330</p>
+            <p><strong>Hours:</strong> 10:00 - 18:00, Mon - Sat</p>
+            <div class="follow">
+                <h4>Follow us</h4>
+                <div class="icon">
+                    <a href="">
+                        <i class="fab fa-facebook-f"></i>
+                    </a>
+                    <a href="https://www.instagram.com/zonic18963?igsh=MW9hZ3czOGFuN2o4bA==" target="_blank">
+                        <i class="fab fa-instagram"></i>
+                    </a>
+                    <a href="https://pin.it/1Bftjo3op" target="_blank">
+                        <i class="fab fa-pinterest-p"></i>
+                    </a>
+                    <a href="https://www.tiktok.com/@zonic1218?_t=ZS-8yNCWQbmMTQ&_r=1" target="_blank">
+                        <i class="fab fa-tiktok"></i>
+                    </a>
+                </div>
+            </div>
+        </div>
+        <div class="col">
+            <h4>About</h4>
+            <a href="about.html">About Us</a>
+            <a href="privacyPolicy.html">Privacy Policy</a>
+            <a href="termsConditions.html">Terms & Conditions</a>
+            <a href="contact.html">Contact Us</a>
+        </div>
+        <div class="col">
+            <h4>My Account</h4>
+            <a href="cart.html">View Cart</a>
+        </div>
+        <div class="col install">
+            <h4>Secured Payment Gateways</h4>
+            <img class="row" src="img/pay.jpeg" alt="">
+        </div>
+
+        <div class="copyright">
+            <p>© ZONIC MARKETERS 2025 | All Rights Reserved</p>
+        </div>
+    </footer>
+
+
+
+    <script src="script.js"></script>
+    <script src="loginSignUp.js"></script>
+</body>
+</html>
